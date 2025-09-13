@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Ticket Booking Web APP</title>
+</head>
+<body>
+<h1>Kindly Enter the ticket number below to get Full Ticket Details</h1>
+<form  th:action="@{/get-ticket}" >
+         <table>
+             <tr>
+             <td>Ticket Number :</td>
+            <!-- <td><input type="text" th:field="*{ticketNumber}" /></td> --> 
+            <td><input type="text"  name="ticketNumber" /></td>
+             </tr>
+             
+         
+             
+                <tr>
+             
+              <td><input type="submit"  value="Get Ticket" /></td>
+             </tr>
+         
+         </table>
+	</form>
+
+</body>
+</html>
